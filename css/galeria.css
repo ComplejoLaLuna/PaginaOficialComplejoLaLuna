@@ -41,10 +41,6 @@ body {
     margin: 20px 0; /* Espacio superior e inferior para los carruseles */
 }
 
-.carousel-item {
-    height: 400px; /* Altura ajustada para los carruseles */
-}
-
 .carousel-item img {
     width: 100%;
     height: 100%;

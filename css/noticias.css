@@ -6,6 +6,31 @@ body {
     background-color: #f0f8ff; /* Fondo suave */
     line-height: 1.6; /* Mejora la legibilidad */
 }
+header {
+    background-image: url('http://127.0.0.1:5500/ComplejoLaLuna/image/chagra2.jpg'); /* Cambia la ruta a la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir el área del header */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espacio alrededor del texto */
+    text-align: center; /* Alineación del texto */
+  }
+  header::after {
+    content: "";
+    position: absolute;
+  
+    top: 120px;
+    left: 50;
+    width: 0%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.3); /* Superpone un color oscuro semitransparente */
+    z-index: 1;
+    filter: none; /* No aplicar desenfoque al overlay */
+    -webkit-filter: none; /* Soporte para Safari */
+  }
+  header h2 {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté sobre el overlay */
+  }
 
 .navbar {
     background-color: #333; /* Fondo del navbar */
@@ -102,3 +127,20 @@ body {
         max-width: 100%; /* Asegura que el campo de búsqueda ocupe todo el ancho */
     }
 }
+
+.animated-heading {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slide-in 2s ease-out forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

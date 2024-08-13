@@ -26,11 +26,22 @@ body {
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #1F4C73;
 }
 
 .card {
     cursor: pointer; /* Cursor de mano al pasar el ratón sobre las tarjetas */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-top: auto;
 }
 
 .card-title {
@@ -46,7 +57,7 @@ body {
 }
 
 .modal-header {
-    background-color: #007bff; /* Color del encabezado del modal */
+    background-color: #1F4C73; /* Color del encabezado del modal */
     color: white; /* Color del texto del encabezado */
 }
 
@@ -59,4 +70,49 @@ body {
     .nav-link {
         font-size: 16px;
     }
+}
+
+.animated-heading {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para el servicio de Java */
+#java-service {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#java-service .service-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#java-service .service-description {
+    font-size: 16px;
+    text-align: justify;
+    color: #555;
+}
+
+#java-service .service-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
 }

@@ -46,6 +46,14 @@ function loadModalContent(servicio) {
             ];
             description = "Ofrecemos actividades al aire libre que fomentan la diversión y el aprendizaje en la naturaleza.";
             break;
+        case 'java':
+            images = [
+                "image/java1.jpg",
+                "image/java2.jpg",
+                "image/java3.jpg"
+            ];
+            description = "Aprende Java, uno de los lenguajes de programación más populares y versátiles del mundo.";
+            break;
     }
 
     // Limpiar el contenido anterior

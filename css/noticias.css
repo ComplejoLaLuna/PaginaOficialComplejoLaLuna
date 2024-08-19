@@ -7,7 +7,6 @@ body {
     line-height: 1.6; /* Mejora la legibilidad */
 }
 header {
-    background-image: url('http://127.0.0.1:5500/ComplejoLaLuna/image/chagra2.jpg'); /* Cambia la ruta a la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir el área del header */
     background-position: center; /* Centra la imagen */
     color: white; /* Color del texto */
